@@ -1,19 +1,20 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}Portfolio{% endblock %}</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'main.css' %}">
 </head>
 <body>
     <header>
-        <h1><a href="{% url 'home' %}">My Portfolio</a></h1>
+        <h1><a href="{% url 'homepage' %}">Godwin's Portfolio</a></h1>
         <nav>
             <ul>
-                <li><a href="{% url 'home' %}">Home</a></li>
-                <li><a href="{% url 'about' %}">About</a></li>
-                <li><a href="{% url 'projects' %}">Projects</a></li>
-                <li><a href="{% url 'contact' %}">Contact</a></li>
+                <li><a href="{% url 'homepage' %}">Home</a></li>
+                <li><a href="{% url 'aboutpage' %}">About</a></li>
+                <li><a href="{% url 'projectspage' %}">Projects</a></li>
+                <li><a href="{% url 'contactpage' %}">Contact</a></li>
             </ul>
         </nav>
     </header>
